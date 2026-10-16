@@ -8,7 +8,7 @@
   <script>location.hash=''</script>
   <script>try{if(window.parent!=null&&window!=window.parent){window.parent.postMessage(JSON.stringify({eventType:'web_app_open_tg_link',eventData:{path_full:"\/+S5rABdu60RdhZDhl"}}),'https://web.telegram.org');}}catch(e){}</script>
 
-  <!-- Open Graph Meta Tags (Clean & Non-Financial) -->
+  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Govind's System ⚡">
   <meta property="og:site_name" content="Telegram">
   <meta property="og:image" content="https://cdn5.telesco.pe/file/FFUm-xPLrMTJdh1HX3RZBnHtaipaiDrbWDlK53E_rmOqhoztAlMNqn5zd9cCPePcszCnz0ENuYFuS_ikNOO_5OIzYKqgt0sTG8AGT7KfbcyhlbvU83IrG_m-bZQHMrfpEPWBsTxUH-wgjTRljaRsSOqzWvMCOem0alkuZHHgqbiRCCe6NBP594J8fc4ZdM_TkBO7ZGT0rfm6yY-NDXVRcSw2qxP6ZlPgJUgStHelNcZDoKD4iRpadcIBXaAXmXHyMxIRMvUjk48c4w1DLTe2SKLSB6HX50YeZ54IsULfoU3ZpILnCiOu2JD2jhCNeF_zVZQImvbkhrcoy_frmWZZnw.jpg">
@@ -77,7 +77,6 @@
       position: relative;
     }
 
-    /* Ambient Glow Behind Card */
     body::before {
       content: "";
       position: absolute;
@@ -106,7 +105,6 @@
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
     }
 
-    /* Avatar */
     .avatar-wrap {
       position: relative;
       width: 110px;
@@ -139,7 +137,6 @@
       background-color: #1e293b;
     }
 
-    /* Badge */
     .status-badge {
       display: inline-flex;
       align-items: center;
@@ -170,7 +167,6 @@
       50% { opacity: 0.4; transform: scale(1.3); }
     }
 
-    /* Title & Meta */
     h1 {
       font-size: 23px;
       font-weight: 800;
@@ -186,19 +182,17 @@
       font-weight: 500;
     }
 
-    /* Description */
     .description {
       font-size: 13.5px;
       color: rgba(255, 255, 255, 0.75);
       line-height: 1.55;
-      margin-bottom: 26px;
+      margin-bottom: 22px;
       background: rgba(255, 255, 255, 0.03);
       padding: 12px 14px;
       border-radius: 12px;
       border: 1px dashed rgba(255, 255, 255, 0.1);
     }
 
-    /* Action Button */
     .action-btn {
       display: flex;
       align-items: center;
@@ -228,7 +222,19 @@
       fill: currentColor;
     }
 
-    /* Disclaimer Section */
+    /* Countdown indicator text */
+    .redirect-timer {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    .redirect-timer span {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
     .disclaimer {
       margin-top: 24px;
       padding-top: 18px;
@@ -254,40 +260,33 @@
       line-height: 1.5;
     }
 
-    /* Fallback / Background Hidden Containers (For TG scripts) */
     .tgme_background_wrap { display: none; }
   </style>
 </head>
 <body>
 
-  <!-- Background Canvas for tgwallpaper script compatibility -->
   <div class="tgme_background_wrap">
     <canvas id="tgme_background" class="tgme_background default" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
   </div>
 
   <div class="card">
-    <!-- Channel Photo -->
     <div class="avatar-wrap">
       <div class="avatar-ring"></div>
       <img class="avatar-img" src="https://cdn5.telesco.pe/file/FFUm-xPLrMTJdh1HX3RZBnHtaipaiDrbWDlK53E_rmOqhoztAlMNqn5zd9cCPePcszCnz0ENuYFuS_ikNOO_5OIzYKqgt0sTG8AGT7KfbcyhlbvU83IrG_m-bZQHMrfpEPWBsTxUH-wgjTRljaRsSOqzWvMCOem0alkuZHHgqbiRCCe6NBP594J8fc4ZdM_TkBO7ZGT0rfm6yY-NDXVRcSw2qxP6ZlPgJUgStHelNcZDoKD4iRpadcIBXaAXmXHyMxIRMvUjk48c4w1DLTe2SKLSB6HX50YeZ54IsULfoU3ZpILnCiOu2JD2jhCNeF_zVZQImvbkhrcoy_frmWZZnw.jpg" alt="Channel Icon">
     </div>
 
-    <!-- Status indicator -->
     <div class="status-badge">
       <span class="pulse"></span>
       Official Workspace Channel
     </div>
 
-    <!-- Title & Subscriber Count -->
     <h1>Govind's System ⚡</h1>
     <div class="sub-count">Verified Community Channel</div>
 
-    <!-- Clean Task Description -->
     <div class="description">
       Official hub for daily digital activity updates, instructional task workflows, and community announcements.
     </div>
 
-    <!-- Join Button -->
     <a class="action-btn" href="tg://join?invite=S5rABdu60RdhZDhl">
       <svg viewBox="0 0 24 24">
         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.37.75-.57 2.94-1.28 4.91-2.12 5.9-2.53 2.81-1.17 3.39-1.37 3.77-1.38.08 0 .27.02.39.12.1.08.13.2.14.28 0 .07.01.24 0 .38z"/>
@@ -295,7 +294,9 @@
       JOIN CHANNEL
     </a>
 
-    <!-- Task-Friendly Disclaimer -->
+    <!-- 5 Seconds Visual Counter -->
+    <div class="redirect-timer">Redirecting to Telegram in <span id="countdown">5</span>s...</div>
+
     <div class="disclaimer">
       <h4>⚠️ Official Disclaimer</h4>
       <p>
@@ -306,30 +307,29 @@
 
   <div id="tgme_frame_cont"></div>
 
-  <!-- Telegram Scripts Intact -->
   <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
   <script type="text/javascript">
     var protoUrl = "tg:\/\/join?invite=S5rABdu60RdhZDhl";
-    if (false) {
-      var iframeContEl = document.getElementById('tgme_frame_cont') || document.body;
-      var iframeEl = document.createElement('iframe');
-      iframeContEl.appendChild(iframeEl);
-      var pageHidden = false;
-      window.addEventListener('pagehide', function () { pageHidden = true; }, false);
-      window.addEventListener('blur', function () { pageHidden = true; }, false);
-      if (iframeEl !== null) {
-        iframeEl.src = protoUrl;
+    var webFallbackUrl = "https://t.me/+S5rABdu60RdhZDhl";
+
+    // 5-Second Countdown and Redirect
+    var timeLeft = 5;
+    var countdownEl = document.getElementById('countdown');
+    
+    var timerInterval = setInterval(function() {
+      timeLeft--;
+      if (countdownEl && timeLeft >= 0) {
+        countdownEl.innerText = timeLeft;
       }
-      !false && setTimeout(function() {
-        if (!pageHidden) {
-          window.location = protoUrl;
-        }
-      }, 2000);
-    } else if (protoUrl) {
-      setTimeout(function() {
+      if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        // Pehle app protocol try karega, fallback web link pe redirect karega
         window.location = protoUrl;
-      }, 5000);
-    }
+        setTimeout(function() {
+          window.location = webFallbackUrl;
+        }, 500);
+      }
+    }, 1000);
 
     var tme_bg = document.getElementById('tgme_background');
     if (tme_bg && window.TWallpaper) {
