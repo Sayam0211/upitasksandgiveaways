@@ -1,295 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Task Hub & Community Updates</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Govind's System | Official Channel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-:root{
-  --panel: #071e1d;
-  --teal1: #2ec00d;
-  --teal2: #24b80d;
-  --btn-text: #f5f5f5;
-  --muted: rgba(255,255,255,0.75);
-  --label-red: #ff2f5a;
-}
+  <script>location.hash=''</script>
+  <script>try{if(window.parent!=null&&window!=window.parent){window.parent.postMessage(JSON.stringify({eventType:'web_app_open_tg_link',eventData:{path_full:"\/+S5rABdu60RdhZDhl"}}),'https://web.telegram.org');}}catch(e){}</script>
 
-*{
-  box-sizing: border-box;
-}
+  <!-- Open Graph Meta Tags (Clean & Non-Financial) -->
+  <meta property="og:title" content="Govind's System ⚡">
+  <meta property="og:site_name" content="Telegram">
+  <meta property="og:image" content="https://cdn5.telesco.pe/file/FFUm-xPLrMTJdh1HX3RZBnHtaipaiDrbWDlK53E_rmOqhoztAlMNqn5zd9cCPePcszCnz0ENuYFuS_ikNOO_5OIzYKqgt0sTG8AGT7KfbcyhlbvU83IrG_m-bZQHMrfpEPWBsTxUH-wgjTRljaRsSOqzWvMCOem0alkuZHHgqbiRCCe6NBP594J8fc4ZdM_TkBO7ZGT0rfm6yY-NDXVRcSw2qxP6ZlPgJUgStHelNcZDoKD4iRpadcIBXaAXmXHyMxIRMvUjk48c4w1DLTe2SKLSB6HX50YeZ54IsULfoU3ZpILnCiOu2JD2jhCNeF_zVZQImvbkhrcoy_frmWZZnw.jpg">
+  <meta property="og:description" content="Official community portal for daily tasks, project guidelines, and direct announcements.">
 
-body{
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #061214 linear-gradient(180deg, #061214, #081617, #071013);
-  color: #fff;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="Govind's System ⚡">
+  <meta property="twitter:site" content="@Telegram">
+  <meta property="twitter:image" content="https://cdn5.telesco.pe/file/FFUm-xPLrMTJdh1HX3RZBnHtaipaiDrbWDlK53E_rmOqhoztAlMNqn5zd9cCPePcszCnz0ENuYFuS_ikNOO_5OIzYKqgt0sTG8AGT7KfbcyhlbvU83IrG_m-bZQHMrfpEPWBsTxUH-wgjTRljaRsSOqzWvMCOem0alkuZHHgqbiRCCe6NBP594J8fc4ZdM_TkBO7ZGT0rfm6yY-NDXVRcSw2qxP6ZlPgJUgStHelNcZDoKD4iRpadcIBXaAXmXHyMxIRMvUjk48c4w1DLTe2SKLSB6HX50YeZ54IsULfoU3ZpILnCiOu2JD2jhCNeF_zVZQImvbkhrcoy_frmWZZnw.jpg">
+  <meta name="twitter:description" content="Official community portal for daily tasks, project guidelines, and direct announcements.">
 
-.center-wrap{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 15px;
-  min-height: 100vh;
-}
+  <!-- App Deep Links -->
+  <meta property="al:ios:app_store_id" content="686449807">
+  <meta property="al:ios:app_name" content="Telegram Messenger">
+  <meta property="al:ios:url" content="tg://join?invite=S5rABdu60RdhZDhl">
+  <meta property="al:android:url" content="tg://join?invite=S5rABdu60RdhZDhl">
+  <meta property="al:android:app_name" content="Telegram">
+  <meta property="al:android:package" content="org.telegram.messenger">
+  <meta name="twitter:app:name:iphone" content="Telegram Messenger">
+  <meta name="twitter:app:id:iphone" content="686449807">
+  <meta name="twitter:app:url:iphone" content="tg://join?invite=S5rABdu60RdhZDhl">
+  <meta name="twitter:app:name:ipad" content="Telegram Messenger">
+  <meta name="twitter:app:id:ipad" content="686449807">
+  <meta name="twitter:app:url:ipad" content="tg://join?invite=S5rABdu60RdhZDhl">
+  <meta name="twitter:app:name:googleplay" content="Telegram">
+  <meta name="twitter:app:id:googleplay" content="org.telegram.messenger">
+  <meta name="twitter:app:url:googleplay" content="https://t.me/+S5rABdu60RdhZDhl">
+  <meta name="apple-itunes-app" content="app-id=686449807, app-argument: tg://join?invite=S5rABdu60RdhZDhl">
 
-.wrap{
-  max-width: 400px;
-  width: 100%;
-  background: var(--panel);
-  border-radius: 20px;
-  padding: 24px 20px 30px;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 0 0 1px rgba(14,242,213,0.35),
-              0 0 20px rgba(14,242,213,0.25),
-              0 0 40px rgba(19,242,255,0.15),
-              0 25px 45px rgba(0,0,0,0.7);
-  animation: edgeGlow 3s ease-in-out infinite alternate;
-}
+  <link rel="icon" type="image/svg+xml" href="//telegram.org/img/website_icon.svg?4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-@keyframes edgeGlow{
-  from{
-    box-shadow: 0 0 0 1px rgba(67, 242, 14, 0.25),
-                0 0 16px rgba(14, 242, 37, 0.18),
-                0 0 32px rgba(19,242,255,0.1),
-                0 25px 45px rgba(0,0,0,0.7);
-  }
-  to{
-    box-shadow: 0 0 0 1px rgba(14, 242, 41, 0.45),
-                0 0 28px rgba(14,242,213,0.35),
-                0 0 55px rgba(19,242,255,0.22),
-                0 25px 45px rgba(0,0,0,0.7);
-  }
-}
+  <style>
+    :root {
+      --bg-base: #0b0f14;
+      --card-bg: rgba(18, 24, 32, 0.85);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --primary: #2AABEE;
+      --primary-hover: #229ED9;
+      --primary-glow: rgba(42, 171, 238, 0.35);
+      --text-main: #ffffff;
+      --text-muted: #94a3b8;
+      --accent-badge: #10b981;
+    }
 
-.marquee{
-  background: linear-gradient(90deg, var(--teal1), var(--teal2));
-  color: var(--btn-text);
-  font-weight: 800;
-  padding: 10px 0;
-  border-radius: 12px;
-  margin-bottom: 14px;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.profile-box{
-  width: 170px;
-  height: 170px;
-  margin: 12px auto 18px;
-  border-radius: 18px;
-  overflow: hidden;
-  border: 4px solid rgba(14,242,213,0.3);
-  background: #041010;
-}
-.profile-box img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      background: radial-gradient(circle at top center, #172331 0%, var(--bg-base) 80%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      overflow-x: hidden;
+      position: relative;
+    }
 
-h1{
-  font-size: 24px;
-  margin: 8px 0;
-  font-weight: 800;
-  color: #fff;
-}
-.subtitle{
-  font-size: 13.5px;
-  color: var(--muted);
-  margin-bottom: 18px;
-  line-height: 1.4;
-}
+    /* Ambient Glow Behind Card */
+    body::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      pointer-events: none;
+      z-index: 0;
+    }
 
-.pill{
-  display: block;
-  width: 100%;
-  padding: 16px 0;
-  margin: 14px 0 6px;
-  border-radius: 50px;
-  background: linear-gradient(90deg, var(--teal1), var(--teal2));
-  color: var(--btn-text);
-  font-weight: 800;
-  font-size: 16px;
-  text-decoration: none;
-  letter-spacing: 1px;
-}
-.pill-sub{
-  font-size: 12px;
-  color: var(--muted);
-}
+    .card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 410px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 38px 24px 28px;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    }
 
-.hurry{
-  color: var(--teal1);
-  font-weight: 800;
-  margin-top: 8px;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-}
+    /* Avatar */
+    .avatar-wrap {
+      position: relative;
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 20px;
+    }
 
-.timer{
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 16px 0 20px;
-}
-.cell{
-  background: rgba(1,40,38,0.7);
-  padding: 12px 14px;
-  border-radius: 10px;
-  width: 75px;
-  border: 1px solid rgba(14,242,213,0.2);
-}
-.num{
-  font-size: 26px;
-  font-weight: 800;
-  color: #fff;
-}
-.lab{
-  font-size: 11px;
-  color: var(--label-red);
-  margin-top: 4px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
+    .avatar-ring {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), #6366f1);
+      padding: 2px;
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      animation: spin 10s linear infinite;
+    }
 
-.features{
-  margin-bottom: 18px;
-}
-.feature-item{
-  margin: 7px 0;
-  font-weight: 600;
-  color: var(--muted);
-  font-size: 13.5px;
-}
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
 
-.divider{
-  height: 1px;
-  background: rgba(255,255,255,0.08);
-  margin: 20px auto;
-}
+    .avatar-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      background-color: #1e293b;
+    }
 
-.exp h2{
-  font-size: 18px;
-  margin: 6px 0;
-  color: #fff;
-}
-.big{
-  color: var(--teal1);
-  font-weight: 800;
-  font-size: 15px;
-}
-.mini{
-  font-size: 11px;
-  opacity: 0.6;
-  letter-spacing: 1.5px;
-  margin-top: 4px;
-}
+    /* Badge */
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 50px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-badge);
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
 
-.disclaimer-box{
-  margin-top: 20px;
-  padding: 12px 14px;
-  background: rgba(0,0,0,0.35);
-  border-radius: 8px;
-  border-left: 3px solid var(--label-red);
-  text-align: left;
-}
-.disclaimer-title{
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--label-red);
-  letter-spacing: 1px;
-  margin-bottom: 4px;
-}
-.disclaimer-text{
-  font-size: 10.5px;
-  line-height: 1.5;
-  color: rgba(255,255,255,0.6);
-}
-</style>
+    .pulse {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-badge);
+      box-shadow: 0 0 8px var(--accent-badge);
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.3); }
+    }
+
+    /* Title & Meta */
+    h1 {
+      font-size: 23px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 4px;
+      letter-spacing: -0.3px;
+    }
+
+    .sub-count {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+
+    /* Description */
+    .description {
+      font-size: 13.5px;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.55;
+      margin-bottom: 26px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px dashed rgba(255, 255, 255, 0.1);
+    }
+
+    /* Action Button */
+    .action-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: linear-gradient(135deg, var(--primary) 0%, #1d90cd 100%);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 15px 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px var(--primary-glow);
+      transition: all 0.25s ease;
+      letter-spacing: 0.3px;
+    }
+
+    .action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(42, 171, 238, 0.5);
+    }
+
+    .action-btn svg {
+      width: 19px;
+      height: 19px;
+      fill: currentColor;
+    }
+
+    /* Disclaimer Section */
+    .disclaimer {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      text-align: left;
+    }
+
+    .disclaimer h4 {
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ef4444;
+      font-weight: 800;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .disclaimer p {
+      font-size: 10.5px;
+      color: #64748b;
+      line-height: 1.5;
+    }
+
+    /* Fallback / Background Hidden Containers (For TG scripts) */
+    .tgme_background_wrap { display: none; }
+  </style>
 </head>
-
 <body>
 
-<div class="center-wrap">
-  <div class="wrap">
-
-    <div class="marquee">
-      <marquee scrollamount="4">📌 DAILY VERIFIED TASKS • WORKSPACE GUIDELINES • JOIN COMMUNITY 📌</marquee>
-    </div>
-
-    <div class="profile-box">
-      <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=500&q=80" alt="Daily Task Hub">
-    </div>
-    
-    <h1>Daily Task Hub 📋</h1>
-  
-    <div class="subtitle">Complete Daily Digital Tasks & Community Activities</div>
-
-    <a class="pill" href="https://t.me/+S5rABdu60RdhZDhl">JOIN TASK CHANNEL</a>
-    <div class="pill-sub">Access verified workflows and guidelines</div>
-
-    <div class="hurry">LIMITED BATCH ACCESS • JOIN TODAY</div>
-
-    <div class="timer">
-      <div class="cell"><div class="num" id="min">30</div><div class="lab">MIN</div></div>
-      <div class="cell"><div class="num" id="sec">00</div><div class="lab">SEC</div></div>
-    </div>
-
-    <div class="features">
-      <div class="feature-item">✅ Step-By-Step Task Instructions</div>
-      <div class="feature-item">🎯 Daily Online Activities & Assignments</div>
-      <div class="feature-item">📌 Verified Community Support & Updates</div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="exp">
-      <h2>Community Workspace</h2>
-      <div class="big">⚡ Instant Task Access</div>
-      <div class="mini">OFFICIAL UPDATES ONLY</div>
-    </div>
-
-    <div class="disclaimer-box">
-      <div class="disclaimer-title">DISCLAIMER</div>
-      <div class="disclaimer-text">
-        Yeh channel keval general tasks, digital activity workflows aur informational community guidance ke liye hai. Yahan kisi bhi tarah ke financial returns, monetary schemes, upi transfers ya payment promises offer nahi kiye jaate hain. Kisi bhi task ko participate karne se pehle channel guidelines dhyan se padhein.
-      </div>
-    </div>
-
+  <!-- Background Canvas for tgwallpaper script compatibility -->
+  <div class="tgme_background_wrap">
+    <canvas id="tgme_background" class="tgme_background default" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
   </div>
-</div>
 
-<script>
-window.addEventListener('DOMContentLoaded', () => {
-  let m = 30, s = 0;
-  const minElem = document.getElementById("min");
-  const secElem = document.getElementById("sec");
+  <div class="card">
+    <!-- Channel Photo -->
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <img class="avatar-img" src="https://cdn5.telesco.pe/file/FFUm-xPLrMTJdh1HX3RZBnHtaipaiDrbWDlK53E_rmOqhoztAlMNqn5zd9cCPePcszCnz0ENuYFuS_ikNOO_5OIzYKqgt0sTG8AGT7KfbcyhlbvU83IrG_m-bZQHMrfpEPWBsTxUH-wgjTRljaRsSOqzWvMCOem0alkuZHHgqbiRCCe6NBP594J8fc4ZdM_TkBO7ZGT0rfm6yY-NDXVRcSw2qxP6ZlPgJUgStHelNcZDoKD4iRpadcIBXaAXmXHyMxIRMvUjk48c4w1DLTe2SKLSB6HX50YeZ54IsULfoU3ZpILnCiOu2JD2jhCNeF_zVZQImvbkhrcoy_frmWZZnw.jpg" alt="Channel Icon">
+    </div>
 
-  if (!minElem || !secElem) return;
+    <!-- Status indicator -->
+    <div class="status-badge">
+      <span class="pulse"></span>
+      Official Workspace Channel
+    </div>
 
-  setInterval(() => {
-    minElem.innerText = String(m).padStart(2, '0');
-    secElem.innerText = String(s).padStart(2, '0');
-    if (s === 0) {
-      if (m === 0) return;
-      m--;
-      s = 59;
-    } else {
-      s--;
+    <!-- Title & Subscriber Count -->
+    <h1>Govind's System ⚡</h1>
+    <div class="sub-count">Verified Community Channel</div>
+
+    <!-- Clean Task Description -->
+    <div class="description">
+      Official hub for daily digital activity updates, instructional task workflows, and community announcements.
+    </div>
+
+    <!-- Join Button -->
+    <a class="action-btn" href="tg://join?invite=S5rABdu60RdhZDhl">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.37.75-.57 2.94-1.28 4.91-2.12 5.9-2.53 2.81-1.17 3.39-1.37 3.77-1.38.08 0 .27.02.39.12.1.08.13.2.14.28 0 .07.01.24 0 .38z"/>
+      </svg>
+      JOIN CHANNEL
+    </a>
+
+    <!-- Task-Friendly Disclaimer -->
+    <div class="disclaimer">
+      <h4>⚠️ Official Disclaimer</h4>
+      <p>
+        Yeh channel keval community task instructions aur digital workflows ke updates ke liye hai. Yahan kisi bhi prakaar ka assured return, gambling ya financial schemes entertain nahi kiye jaate hain.
+      </p>
+    </div>
+  </div>
+
+  <div id="tgme_frame_cont"></div>
+
+  <!-- Telegram Scripts Intact -->
+  <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
+  <script type="text/javascript">
+    var protoUrl = "tg:\/\/join?invite=S5rABdu60RdhZDhl";
+    if (false) {
+      var iframeContEl = document.getElementById('tgme_frame_cont') || document.body;
+      var iframeEl = document.createElement('iframe');
+      iframeContEl.appendChild(iframeEl);
+      var pageHidden = false;
+      window.addEventListener('pagehide', function () { pageHidden = true; }, false);
+      window.addEventListener('blur', function () { pageHidden = true; }, false);
+      if (iframeEl !== null) {
+        iframeEl.src = protoUrl;
+      }
+      !false && setTimeout(function() {
+        if (!pageHidden) {
+          window.location = protoUrl;
+        }
+      }, 2000);
+    } else if (protoUrl) {
+      setTimeout(function() {
+        window.location = protoUrl;
+      }, 100);
     }
-  }, 1000);
-});
-</script>
 
+    var tme_bg = document.getElementById('tgme_background');
+    if (tme_bg && window.TWallpaper) {
+      TWallpaper.init(tme_bg);
+      TWallpaper.animate(true);
+      window.onfocus = function(){ TWallpaper.update(); };
+    }
+    document.body.classList.remove('no_transition');
+
+    function toggleTheme(dark) {
+      document.documentElement.classList.toggle('theme_dark', dark);
+      window.Telegram && Telegram.setWidgetOptions({dark: dark});
+    }
+    if (window.matchMedia) {
+      var darkMedia = window.matchMedia('(prefers-color-scheme: dark)');
+      toggleTheme(darkMedia.matches);
+      darkMedia.addListener(function(e) {
+        toggleTheme(e.matches);
+      });
+    }
+  </script>
 </body>
 </html>
