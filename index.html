@@ -201,4 +201,71 @@ h1{
 let m=30,s=0;
 setInterval(()=>{
   document.getElementById("min").innerText=String(m).padStart(2,'0');
-  document.getElementById("sec").
+  document.getElementById("sec").innerText=String(s).padStart(2,'0');
+  if(s===0){ if(m===0)return; m--; s=59; } else s--;
+},1000);
+</script>
+</head>
+
+<body>
+
+<div class="center-wrap">
+  <div class="wrap">
+
+    <!-- Top Marquee Banner -->
+    <div class="marquee">
+      <marquee scrollamount="4">📌 DAILY VERIFIED TASKS • WORKSPACE GUIDELINES • JOIN COMMUNITY 📌</marquee>
+    </div>
+
+    <!-- Banner / Profile Image (Updated to task-oriented workspace image) -->
+    <div class="profile-box">
+      <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=500&q=80" alt="Daily Task Hub">
+    </div>
+    
+    <!-- Title -->
+    <h1>Daily Task Hub 📋</h1>
+  
+    <!-- Subtitle -->
+    <div class="subtitle">Complete Daily Digital Tasks & Community Activities</div>
+
+    <!-- CTA Button -->
+    <a class="pill" href="https://t.me/+t7aXGJIclaIyMDNl">JOIN TASK CHANNEL</a>
+    <div class="pill-sub">Access verified workflows and guidelines</div>
+
+    <div class="hurry">LIMITED BATCH ACCESS • JOIN TODAY</div>
+
+    <!-- Timer -->
+    <div class="timer">
+      <div class="cell"><div class="num" id="min">30</div><div class="lab">MIN</div></div>
+      <div class="cell"><div class="num" id="sec">00</div><div class="lab">SEC</div></div>
+    </div>
+
+    <!-- Feature Items -->
+    <div class="features">
+      <div class="feature-item">✅ Step-By-Step Task Instructions</div>
+      <div class="feature-item">🎯 Daily Online Activities & Assignments</div>
+      <div class="feature-item">📌 Verified Community Support & Updates</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Lower Section -->
+    <div class="exp">
+      <h2>Community Workspace</h2>
+      <div class="big">⚡ Instant Task Access</div>
+      <div class="mini">OFFICIAL UPDATES ONLY</div>
+    </div>
+
+    <!-- Disclaimer Section -->
+    <div class="disclaimer-box">
+      <div class="disclaimer-title">DISCLAIMER</div>
+      <div class="disclaimer-text">
+        Yeh channel keval general tasks, digital activity workflows aur informational community guidance ke liye hai. Yahan kisi bhi tarah ke financial returns, monetary schemes, upi transfers ya payment promises offer nahi kiye jaate hain. Kisi bhi task ko participate karne se pehle channel guidelines dhyan se padhein.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
