@@ -1,250 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Govind's System | Official Channel</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Task Hub & Community Updates</title>
 
-  <style>
-    :root {
-      --bg: #0d0a0b;
-      --card-bg: #140e10;
-      --border-color: rgba(255, 75, 75, 0.15);
-      --red-accent: #f04a4a;
-      --red-btn: #eb4d4b;
-      --red-btn-hover: #d63d3b;
-      --text-main: #f5f5f5;
-      --text-muted: #9e9496;
-    }
+<style>
+:root{
+  --panel:#071e1d;
+  --teal1:#2ec00d;
+  --teal2:#24b80d;
+  --btn-text:#f5f5f5;
+  --muted:rgba(255,255,255,0.75);
+  --label-red:#ff2f5a;
+}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,#061214,#081617,#071013);
+  color:#fff;
+  overflow-x:hidden;
+}
 
-    body {
-      background-color: var(--bg);
-      color: var(--text-main);
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 24px 16px;
-    }
+.center-wrap{
+  display:flex;
+  justify-content:center;
+  padding:40px 0;
+}
 
-    /* CARD CONTAINER */
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 28px;
-      max-width: 420px;
-      width: 100%;
-      padding: 40px 24px 32px;
-      text-align: center;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 50px rgba(240, 74, 74, 0.05);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+.wrap{
+  max-width:400px;
+  width:80%;
+  background:var(--panel);
+  border-radius:20px;
+  padding:22px 20px 30px;
+  text-align:center;
+  position:relative;
 
-    /* CIRCULAR AVATAR */
-    .avatar-wrapper {
-      position: relative;
-      width: 150px;
-      height: 150px;
-      margin-bottom: 24px;
-    }
+  box-shadow:
+    0 0 0 1px rgba(14,242,213,0.35),
+    0 0 20px rgba(14,242,213,0.25),
+    0 0 40px rgba(19,242,255,0.15),
+    0 25px 45px rgba(0,0,0,0.7);
 
-    .avatar-ring {
-      position: absolute;
-      inset: -4px;
-      border-radius: 50%;
-      border: 2px solid var(--red-accent);
-      opacity: 0.85;
-      box-shadow: 0 0 15px rgba(240, 74, 74, 0.3);
-    }
+  animation: edgeGlow 3s ease-in-out infinite alternate;
+}
 
-    .avatar-img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-    }
+@keyframes edgeGlow{
+  from{
+    box-shadow:
+      0 0 0 1px rgba(67, 242, 14, 0.25),
+      0 0 16px rgba(14, 242, 37, 0.18),
+      0 0 32px rgba(19,242,255,0.1),
+      0 25px 45px rgba(0,0,0,0.7);
+  }
+  to{
+    box-shadow:
+      0 0 0 1px rgba(14, 242, 41, 0.45),
+      0 0 28px rgba(14,242,213,0.35),
+      0 0 55px rgba(19,242,255,0.22),
+      0 25px 45px rgba(0,0,0,0.7);
+  }
+}
 
-    /* VIP BADGE */
-    .vip-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      border: 1px solid rgba(240, 74, 74, 0.35);
-      background: rgba(240, 74, 74, 0.08);
-      border-radius: 50px;
-      padding: 6px 18px;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #ff6b6b;
-      margin-bottom: 24px;
-    }
+.marquee{
+  background:linear-gradient(90deg,var(--teal1),var(--teal2));
+  color:var(--btn-text);
+  font-weight:900;
+  padding:10px 0;
+  border-radius:12px;
+  margin-bottom:12px;
+  font-size:14px;
+  letter-spacing:1px;
+}
 
-    .pulse-dot {
-      width: 7px;
-      height: 7px;
-      background-color: var(--red-accent);
-      border-radius: 50%;
-      box-shadow: 0 0 8px var(--red-accent);
-      animation: pulse 1.5s infinite;
-    }
+.profile-box{
+  width:180px;
+  height:180px;
+  margin:12px auto 18px;
+  border-radius:18px;
+  overflow:hidden;
+  border:4px solid rgba(14,242,213,0.25);
+}
+.profile-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
 
-    @keyframes pulse {
-      0% { transform: scale(0.9); opacity: 0.7; }
-      50% { transform: scale(1.3); opacity: 1; }
-      100% { transform: scale(0.9); opacity: 0.7; }
-    }
+h1{
+  font-size:24px;
+  margin:6px 0;
+  font-weight:800;
+}
+.subtitle{
+  font-size:14px;
+  color:var(--muted);
+  margin-bottom:18px;
+}
 
-    /* TITLES */
-    .title-main {
-      font-family: 'Cinzel', serif;
-      font-size: 30px;
-      letter-spacing: 3px;
-      font-weight: 700;
-      color: #ffffff;
-      line-height: 1.2;
-    }
+.pill{
+  display:block;
+  width:100%;
+  padding:18px 0;
+  margin:14px 0;
+  border-radius:50px;
+  background:linear-gradient(90deg,var(--teal1),var(--teal2));
+  color:var(--btn-text);
+  font-weight:900;
+  font-size:17px;
+  text-decoration:none;
+  letter-spacing:1px;
+}
+.pill-sub{
+  font-size:12px;
+  color:var(--muted);
+}
 
-    .title-sub {
-      font-family: 'Cinzel', serif;
-      font-size: 26px;
-      letter-spacing: 4px;
-      font-weight: 700;
-      color: var(--red-accent);
-      margin-top: 4px;
-      margin-bottom: 20px;
-    }
+.hurry{
+  color:var(--teal1);
+  font-weight:800;
+  margin-top:6px;
+}
 
-    /* DESCRIPTION */
-    .description {
-      font-size: 14.5px;
-      line-height: 1.6;
-      color: var(--text-muted);
-      max-width: 320px;
-      margin-bottom: 34px;
-    }
+.timer{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin:16px 0 20px;
+}
+.cell{
+  background:rgba(1,40,38,0.6);
+  padding:12px 16px;
+  border-radius:10px;
+  width:70px;
+}
+.num{
+  font-size:28px;
+  font-weight:800;
+}
+.lab{
+  font-size:12px;
+  color:var(--label-red);
+  margin-top:4px;
+  font-weight:700;
+}
 
-    /* JOIN BUTTON */
-    .join-btn {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 12px;
-      background: var(--red-btn);
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      padding: 16px 20px;
-      border-radius: 14px;
-      transition: all 0.25s ease;
-      box-shadow: 0 10px 25px rgba(235, 77, 75, 0.35);
-    }
+.features{margin-bottom:18px;}
+.feature-item{
+  margin:6px 0;
+  font-weight:700;
+  color:var(--muted);
+  font-size:14px;
+}
 
-    .join-btn:hover {
-      background: var(--red-btn-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 14px 28px rgba(235, 77, 75, 0.45);
-    }
+.divider{
+  height:1px;
+  background:rgba(255,255,255,0.08);
+  margin:20px auto;
+}
 
-    .join-btn svg {
-      width: 18px;
-      height: 18px;
-      fill: currentColor;
-    }
+.exp h2{font-size:18px; margin: 6px 0;}
+.big{
+  color:var(--teal1);
+  font-weight:800;
+  font-size:15px;
+}
+.mini{
+  font-size:11px;
+  opacity:0.6;
+  letter-spacing:1.5px;
+  margin-top:4px;
+}
 
-    /* FOOTER BADGE */
-    .trust-badge {
-      margin-top: 24px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      color: #7d7274;
-      text-transform: uppercase;
-    }
+/* DISCLAIMER SECTION */
+.disclaimer-box{
+  margin-top:20px;
+  padding:12px 14px;
+  background:rgba(0,0,0,0.3);
+  border-radius:8px;
+  border-left:3px solid var(--label-red);
+  text-align:left;
+}
+.disclaimer-title{
+  font-size:11px;
+  font-weight:700;
+  color:var(--label-red);
+  letter-spacing:1px;
+  margin-bottom:4px;
+}
+.disclaimer-text{
+  font-size:10px;
+  line-height:1.5;
+  color:rgba(255,255,255,0.55);
+}
+</style>
 
-    .trust-badge svg {
-      width: 13px;
-      height: 13px;
-      fill: currentColor;
-    }
-
-    .page-footer {
-      margin-top: 24px;
-      font-size: 11px;
-      color: #554d4f;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="card">
-    
-    <!-- Profile Image -->
-    <div class="avatar-wrapper">
-      <div class="avatar-ring"></div>
-      <!-- Apni image ka URL niche src me daalein -->
-      <img class="avatar-img" src="https://i.ibb.co/nMnNPFkf/Whats-App-Image-2026-10-07-at-4-43-00-PM.jpg" alt="Profile Avatar" />
-    </div>
-
-    <!-- Live Status -->
-    <div class="vip-badge">
-      <span class="pulse-dot"></span>
-      VIP • LIVE NOW
-    </div>
-
-    <!-- Branding Titles -->
-    <h1 class="title-main">GOVIND'S</h1>
-    <h2 class="title-sub">SYSTEM</h2>
-
-    <!-- Clean Description -->
-    <p class="description">
-      The official Telegram channel — community updates and direct announcements.
-    </p>
-
-    <!-- Join Telegram Button -->
-    <a href="https://t.me/YOUR_CHANNEL_LINK" class="join-btn" target="_blank" rel="noopener noreferrer">
-      <!-- Telegram Icon -->
-      <svg viewBox="0 0 24 24">
-        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-      </svg>
-      JOIN TELEGRAM CHANNEL
-      <!-- Arrow Icon -->
-      <svg style="width: 14px; height: 14px;" viewBox="0 0 24 24">
-        <path d="M5 19L19 5M19 5H9M19 5V15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-      </svg>
-    </a>
-
-    <!-- Trust / Verification line -->
-    <div class="trust-badge">
-      <svg viewBox="0 0 24 24">
-        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
-      </svg>
-      OFFICIAL CHANNEL • DIRECT ACCESS
-    </div>
-
-  </div>
-
-</body>
-</html>
+<script>
+let m=30,s=0;
+setInterval(()=>{
+  document.getElementById("min").innerText=String(m).padStart(2,'0');
+  document.getElementById("sec").
